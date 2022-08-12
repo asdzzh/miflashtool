@@ -1,0 +1,18 @@
+﻿<Page x:Class="WPFUIKitProfessional.settings"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPFUIKitProfessional"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="settings">
+
+    <Border CornerRadius="10" Background="{DynamicResource SecundaryBackgroundColor}" >
+        <Grid HorizontalAlignment="Left" Width="800">
+            <Label Content="设置" Foreground="Black" FontSize="48" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="28,10,0,0" Width="253"/>
+            <Label Content="先空着吧，也许在哪次更新之后就可以用了！" Foreground="Black" FontSize="18" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="28,96,0,0" Width="441" Height="38"/>
+
+        </Grid>
+    </Border>
+</Page>

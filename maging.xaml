@@ -1,0 +1,42 @@
+﻿<Page x:Class="UIKitTutorials.Pages.maging"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:UIKitTutorials.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="maging">
+    
+    
+
+    <Border CornerRadius="5" Background="{DynamicResource SecundaryBackgroundColor}">
+        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="8*"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Label Content="修补boot文件" Foreground="Black" FontSize="48" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="28,10,0,0" Width="514"/>
+            <Label Content="现在，手机会自动打开刚刚安装好的magisk应用&#xA;&#xA;在这个应用内的右上方可以看到一个'安装'的按键，点一下&#xA;&#xA;在选项中选择修补boot镜像中的vbmeta，然后点下一步，&#xA;&#xA;在下面的方式选'选择并修补一个文件'&#xA;&#xA;修补完的文件会放在download目录下（sdcard/download）将这个修补好的文件传回电脑&#xA;&#xA;传回电脑后按下面的按键选择刚刚传回电脑的文件" Foreground="Black" FontSize="18" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="28,88,0,0" Width="762" Height="259"/>
+            <Button Content="点我选择修补好的文件" Margin="0,367,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Width="244" Click="Button_Click"/>
+         
+            <Frame x:Name="PagesNavigation" NavigationUIVisibility="Hidden">
+                <!-- Page Content -->
+            </Frame>
+            
+            
+
+
+
+
+
+
+
+
+
+
+        </Grid>
+    </Border>
+    
+</Page>

@@ -1,0 +1,35 @@
+﻿<Page x:Class="WPFUIKitProfessional.xinxi"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPFUIKitProfessional"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="xinxi">
+
+    <Border CornerRadius="5" Background="{DynamicResource SecundaryBackgroundColor}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="8*"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Label Content="相关信息" Foreground="Black" FontSize="48" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="28,10,0,0" Width="514"/>
+            <Label Content="ui by Jeyderht&#xA;&#xA;作者：chickenman&#xD;&#xA;&#xD;&#xA;本工具免费，也永远不会收费！&#xA;&#xA;项目界面已开源，存储库名称为miflashtool，开源这个项目最开始是为了让更多人了解刷机&#xA;&#xA;后续如果哪天我不再更新了，我将把后台代码一并上传，也希望有人能把这个项目继续下去！&#xA;&#xA;最后，觉得好用的老板可以打赏一下，蟹蟹！！！" Foreground="Black" FontSize="18" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="28,88,0,0" Width="762" Height="259"/>
+            <Button Content="打赏一下作者吧~" Margin="278,367,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="244" Click="Button_Click" Cursor="Hand"/>
+            <Frame x:Name="PagesNavigation" NavigationUIVisibility="Hidden">
+                <!-- Page Content -->
+            </Frame>
+
+
+
+
+
+
+
+
+
+
+        </Grid>
+    </Border>
+</Page>

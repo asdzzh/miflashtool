@@ -1,0 +1,34 @@
+﻿<Page x:Class="UIKitTutorials.Pages.magbllock"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:UIKitTutorials.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="magbllock">
+
+    <Border CornerRadius="5" Background="{DynamicResource SecundaryBackgroundColor}">
+        <Grid>
+            <Grid.Background>
+                <ImageBrush/>
+            </Grid.Background>
+            <Label Content="BL锁未解锁" Foreground="Black" FontSize="48" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="28,10,0,0" Width="269"/>
+            <Label Content="请先前往手机的开发者设置中申请解锁吧!&#xD;&#xA;现在可以点右上角的返回键返回上一个页面啦！&#xD;&#xA;&#xD;&#xA;若有误判且你已十分确定你解锁了BL，那么点击下方的按键将会跳过BL锁检测，直接&#xD;&#xA;进行下一步" Foreground="Black" FontSize="18" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="28,96,0,0" Width="714" Height="139"/>
+            <Button Content="请十分确定自己解锁了BL后再点我" Margin="278,367,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="244" Click="Button_Click"/>
+    
+            <Frame x:Name="PagesNavigation" NavigationUIVisibility="Hidden">
+                <!-- Page Content -->
+            </Frame>
+
+
+
+
+
+
+
+
+
+        </Grid>
+    </Border>
+</Page>

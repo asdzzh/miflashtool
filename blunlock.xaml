@@ -1,0 +1,26 @@
+﻿<Page x:Class="UIKitTutorials.Pages.blunlock"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:UIKitTutorials.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="blunlock">
+
+    <Border CornerRadius="5" Background="{DynamicResource SecundaryBackgroundColor}">
+        <Grid>
+            <Label Content="BL锁已解锁！" Foreground="Black" FontSize="48" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="28,10,0,0" Width="288"/>
+            <Label Content="恭喜！当前手机的BL锁已解锁，可以使用本工具内的所有功能啦！&#xD;&#xA;现在可以点右上角的返回键或在左侧菜单打开其他页面啦！" Foreground="Black" FontSize="18" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="28,96,0,0" Width="696" Height="92"/>
+
+
+
+
+
+
+
+
+
+        </Grid>
+    </Border>
+</Page>

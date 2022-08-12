@@ -1,0 +1,53 @@
+﻿<Page x:Class="UIKitTutorials.Pages.pageother"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:UIKitTutorials.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="pageother">
+
+    <Border CornerRadius="10" Background="{DynamicResource SecundaryBackgroundColor}">
+        <Grid>
+            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <!-- Start: GridColumn Left -->
+            <Border CornerRadius="10 0 0 10"
+                    Padding="10"
+                    Background="{DynamicResource SecundaryBackgroundColor}">
+                <Grid x:Name="gridMenu">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="60"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="130"/>
+                        <RowDefinition Height="80"/>
+                    </Grid.RowDefinitions>
+
+
+                    <Label Content="更多功能" Foreground="Black" FontSize="40" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="3,10,0,0" Width="200" Height="67" Grid.RowSpan="2"/>
+                    <StackPanel Grid.Row="1" Grid.RowSpan="3" Margin="-6,0,18,10" HorizontalAlignment="Stretch">
+                        <RadioButton x:Name="rdHome" Content="BL解锁检测" Style="{DynamicResource MenuRadioButtonStyle}"   Margin="0 30 0 0" Click="rdHome_Click" FontFamily="Microsoft YaHei UI" FontWeight="Bold"/>
+                        <RadioButton x:Name="rdreboot" Content="驱动安装" Style="{DynamicResource MenuRadioButtonStyle}"  Margin="0 1 0 1" Click="rdreboot_Click" FontFamily="Microsoft YaHei UI" FontWeight="Bold"/>
+                        <RadioButton x:Name="rdroot" Content="清除指定分区" Style="{DynamicResource MenuRadioButtonStyle}"   Margin="0 0 0 0" Click="rdroot_Click" FontFamily="Microsoft YaHei UI" FontWeight="Bold"/>
+                        <RadioButton x:Name="rdrec" Content="备份boot文件" Style="{DynamicResource MenuRadioButtonStyle}"  Margin="0 1 0 1" Click="rdrec_Click" FontFamily="Microsoft YaHei UI" FontWeight="Bold"/>
+                        <RadioButton x:Name="rdother" Content="还没想到" Style="{DynamicResource MenuRadioButtonStyle}"  Margin="0 0 0 0"  Click="rdother_Click" FontFamily="Microsoft YaHei UI" FontWeight="Bold"/>
+
+                        
+
+
+
+                    </StackPanel>
+
+                </Grid>
+            </Border>
+            <Frame x:Name="PagesNavigation" NavigationUIVisibility="Hidden" Margin="0,0,-800,0">
+                <!-- Page Content -->
+            </Frame>
+            
+        </Grid>
+    </Border>
+</Page>

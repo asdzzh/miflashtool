@@ -1,0 +1,34 @@
+﻿<Page x:Class="UIKitTutorials.Pages.pagerec"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:UIKitTutorials.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="pagerec">
+
+    <Border CornerRadius="5" Background="{DynamicResource SecundaryBackgroundColor}">
+        <Grid>
+            <Label Content="刷入第三方rec" Foreground="Black" FontSize="48" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="28,10,0,0" Width="372"/>
+            <Label Content="前提：BL锁已解锁&#xD;&#xA;&#xD;&#xA;ps：这里我还没想到写点啥，就先这么空着吧，后续会在这里加入下载rec的功能！" HorizontalAlignment="Left" Margin="28,97,0,0" VerticalAlignment="Top" Height="89" Width="712" FontSize="18" FontWeight="Bold"/>
+            <Label Content="全自动刷入：" HorizontalAlignment="Left" Margin="28,0,0,0" VerticalAlignment="Center" FontSize="18" FontWeight="Bold"/>
+
+            <Button Content="点我点我" HorizontalAlignment="Left" Margin="144,0,0,0" VerticalAlignment="Center" Click="Button_Click_2" />
+            <Frame x:Name="PagesNavigation" NavigationUIVisibility="Hidden">
+                <!-- Page Content -->
+            </Frame>
+
+
+
+
+
+
+
+
+
+
+
+        </Grid>
+    </Border>
+</Page>
